@@ -93,6 +93,16 @@ typedef NS_ENUM(NSUInteger, JSBadgeViewAlignment)
 @property (nonatomic, assign) CGFloat badgeMinWidth UI_APPEARANCE_SELECTOR;
 
 /**
+ * The distance side margin
+ */
+@property (nonatomic, assign) CGFloat sideMargin UI_APPEARANCE_SELECTOR;
+
+/**
+ * A constraint height
+ */
+@property (nonatomic, assign) CGFloat minHeight UI_APPEARANCE_SELECTOR;
+
+/**
  * Optionally init using this method to have the badge automatically added to another view.
  */
 - (id)initWithParentView:(UIView *)parentView alignment:(JSBadgeViewAlignment)alignment;
